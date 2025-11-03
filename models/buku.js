@@ -1,0 +1,23 @@
+module.exports = (sequelize, DataTypes) => {
+  const Komik = sequelize.define('Buku', {
+    id: {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true
+    },
+    judul: {
+        type: DataTypes.STRING,
+
+    },
+    pengarang: {
+        type: DataTypes.STRING,
+    },
+    tahunterbit: {
+        type: DataTypes.STRING,
+    },
+    bidang : {
+        type: DataTypes.STRING,
+    }
+    });
+    return Komik;
+}
